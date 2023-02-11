@@ -1,0 +1,42 @@
+.icons {
+    top: 50vh;
+    left: 5vh;
+    height: 18vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 20rem 0 20rem;
+}
+
+.profile {
+    margin-bottom: var(--padding-quadruple);
+}
+
+.bio {
+    margin-bottom: var(--padding-double);
+}
+
+.career {
+    margin-bottom: var(--padding-double);
+}
+
+.projects {
+    margin-bottom: var(--padding-double);
+}
+
+.footer {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a{
+    color: var(--light-main);
+    text-decoration: none;
+}

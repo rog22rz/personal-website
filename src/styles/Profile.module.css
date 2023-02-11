@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.name {
+  /* Animation */
+  margin-top: var(--padding);
+  padding-bottom: 10px;
+  /* margin-bottom: -10px; */
+  background-image: linear-gradient(
+    -225deg,
+    #ff7b00 0%,
+    #ffb700 29%,
+    #ffd000 67%,
+    #fff800 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+/* Name animation */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.name:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.title:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.title {
+  animation: color-animation 4s linear infinite;
+}
+
+.titleWord1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
+}
+
+.titleWord2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+}
+
+.titleWord3 {
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}

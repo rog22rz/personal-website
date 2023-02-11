@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resumeBorders {
+  color: var(--light-main);
+  text-decoration: none;
+  border: 0.125rem dotted;
+  border-radius: 8px;
+  padding: 10px;
+}

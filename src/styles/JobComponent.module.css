@@ -1,0 +1,52 @@
+.container {
+  border: 3px solid var(--light-main);
+  border-radius: 10px;
+  padding: var(--padding-half);
+  background-color: var(--dark-secondary);
+  transition: all .2s ease-in-out; 
+  min-height: 15.5rem;
+}
+
+.container:hover{
+    transform: scale(1.04);
+    border-color: var(--light-blue)
+}
+
+.container:hover .jobTitle {
+    color: var(--light-blue)
+}
+
+.dateAndLocation {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--padding);
+}
+
+.date {
+  display: flex;
+  margin-left: var(--padding-quarter);
+}
+
+.location {
+  margin-left: auto;
+}
+
+.jobTitle {
+  margin-bottom: var(--padding-quarter);
+  font-size: var(--section-header);
+  line-height: var(--section-header-line-height);
+  font-weight: bold;
+}
+
+.company {
+  margin-bottom: var(--padding);
+  color: var(--shade-main);
+}
+
+.jobDescription {
+  margin-bottom: var(--padding);
+}
+
+.techStack {
+  color: var(--shade-main);   
+}

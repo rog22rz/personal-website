@@ -1,0 +1,56 @@
+.container {
+  border: 3px solid var(--light-main);
+  padding: var(--padding-half);
+  background-color: var(--dark-secondary);
+  transition: all .2s ease-in-out; 
+  min-height: 12.5rem;
+}
+
+.container:hover{
+    transform: scale(1.04);
+    border-color: var(--light-blue)
+}
+
+.container:hover .name {
+    color: var(--light-blue)
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topRow a{
+  color: var(--light-main);
+}
+
+.topRow a:hover{
+  color: var(--light-blue);
+}
+
+.dateContainer {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  margin-left: var(--padding-quarter);
+  align-items: center;
+}
+
+.name {
+  margin-top: var(--padding-half);
+  margin-bottom: var(--padding-half);
+  font-size: var(--section-header);
+  line-height: var(--section-header-line-height);
+  font-weight: bold;    
+}
+
+.description {
+    margin-bottom: var(--padding);
+}
+
+.techStack {
+    color: var(--shade-main);   
+}
