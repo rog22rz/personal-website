@@ -48,6 +48,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark-main);
+  opacity: 0.95;
+  z-index: 888;
 }
 
 .navbar--hidden {
