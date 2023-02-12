@@ -8,7 +8,7 @@ function NavigationBar({ isVisible }) {
     <nav class={classnames("navbar", { "navbar--hidden": !isVisible })}>
       <ul class={styles.list}>
         <li>
-          <Link activeClass="active" offset={-20} smooth spy to="about">
+          <Link activeClass="active" offset={-2000} smooth spy to="about">
             About me
           </Link>
         </li>
