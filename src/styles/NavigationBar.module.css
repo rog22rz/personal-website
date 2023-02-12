@@ -14,3 +14,7 @@
   border-radius: 8px;
   padding: 10px;
 }
+
+.resumeBorders:hover {
+  color: var(--light-blue);
+}

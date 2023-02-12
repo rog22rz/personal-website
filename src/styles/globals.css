@@ -1,13 +1,9 @@
 :root {
-  /* --dark-main: #010D28;
-  --dark-secondary: #02133C;
-  --light-main: #AED9E0; */
-
   --dark-main: #00061d;
   --dark-secondary: #000929;
   --light-main: #ffff;
   --shade-main: #b5bad0;
-  --light-blue: #81d2c7;
+  --light-blue: #ffd000;
 
   --padding-quarter: 0.3rem;
   --padding-half: 0.6rem;
@@ -62,4 +58,5 @@ h2 {
   cursor: pointer;
   transform: scale(1.2);
   transition-duration: 0.2s;
+  color: var(--light-blue);
 }

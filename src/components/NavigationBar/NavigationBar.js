@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from "@/styles/NavigationBar.module.css";
 import { Link } from "react-scroll";
 import classnames from "classnames";
-import RogerZhangResume from "../../static/documents/Resume_RogerZhang.pdf";
 
 function NavigationBar({ isVisible }) {
   return (
@@ -26,7 +25,7 @@ function NavigationBar({ isVisible }) {
         <li>
           <a
             class={styles.resumeBorders}
-            href={"../../static/documents/Resume_RogerZhang.pdf"}
+            href={"/Resume_RogerZhang.pdf"}
             target="_blank"
             rel="noreferrer"
           >

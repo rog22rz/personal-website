@@ -1,5 +1,4 @@
 import Avatar from "@mui/material/Avatar";
-import profile from "../../static/images/ProfilePic.jpg";
 import styles from "@/styles/Profile.module.css";
 
 function Profile() {
@@ -7,8 +6,8 @@ function Profile() {
     <div class={styles.container}>
       <Avatar
         alt="Roger Zhang"
-        src={profile}
-        sx={{ width: 150, height: 150 }}
+        src={"/ProfilePic.jpg"}
+        sx={{ width: 200, height: 200 }}
       />
       <h1 class={styles.name}>Roger Zhang</h1>
       <h2 class={styles.title}>
