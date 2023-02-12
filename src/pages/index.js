@@ -54,7 +54,7 @@ export default function Home() {
           <div class={styles.icons}>
             <Link href="https://github.com/rog22rz" target="_blank">
               <IconButton aria-label="github-link" size="large">
-                <GitHubIcon fontSize="inherit"/>
+                <GitHubIcon fontSize="inherit" />
               </IconButton>
             </Link>
             <Link href="mailto:roger.zhang@mail.mcgill.ca" target="_blank">
@@ -72,18 +72,22 @@ export default function Home() {
             </Link>
           </div>
           <div class={styles.container}>
-            <div class={styles.profile}>
-              <Profile />
-            </div>
             <div class={styles.mainDetails}>
-              <section id={"about"}>
-                <div class={styles.bio}>
-                  <h1>A Little About Myself</h1>
-                  {intro.map((paragraph) => {
-                    return <p key={paragraph.key}>{paragraph.section}</p>;
-                  })}
+              <div class={styles.introContainer}>
+                <div class={styles.profile}>
+                  <Profile />
                 </div>
-              </section>
+                <div class={styles.about}>
+                  <section id={"about"}>
+                    <div class={styles.bio}>
+                      <h1>A Little About Myslef</h1>
+                      {intro.map((paragraph) => {
+                        return <p key={paragraph.key}>{paragraph.section}</p>;
+                      })}
+                    </div>
+                  </section>
+                </div>
+              </div>
               <div class={styles.career}>
                 <section id={"jobs"}>
                   <h1>Career</h1>
@@ -129,7 +133,15 @@ export default function Home() {
             </div>
           </div>
         </main>
-        <footer class={styles.footer}><a href="https://www.linkedin.com/in/zhang-roger/" target="_blank" rel="noreferrer">Built & Designed By Roger Zhang</a></footer>
+        <footer class={styles.footer}>
+          <a
+            href="https://www.linkedin.com/in/zhang-roger/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Built & Designed By Roger Zhang
+          </a>
+        </footer>
       </ThemeProvider>
     </>
   );
