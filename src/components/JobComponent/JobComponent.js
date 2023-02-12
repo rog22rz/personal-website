@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import JobComponentModal from "./JobComponentModal";
 import styles from "@/styles/JobComponent.module.css";
 
 function JobComponent(props) {
   const { date, location, jobTitle, company, description, techStack } = props;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpen = () => {!isModalOpen && setIsModalOpen(true)};
+  const handleClose = () => setIsModalOpen(false);
 
   return (
-    <div class={styles.container}>
+    <div class={styles.container} onClick={handleOpen}>
+      <JobComponentModal isOpen={isModalOpen} handleClose={handleClose} jobDetails={props}/>
       <div class={styles.dateAndLocation}>
         <CalendarMonthIcon />
         <div class={styles.date}>{date}</div>

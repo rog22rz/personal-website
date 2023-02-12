@@ -78,7 +78,7 @@ export default function Home() {
             <div class={styles.mainDetails}>
               <section id={"about"}>
                 <div class={styles.bio}>
-                  <h1>A Little About Myslef</h1>
+                  <h1>A Little About Myself</h1>
                   {intro.map((paragraph) => {
                     return <p key={paragraph.key}>{paragraph.section}</p>;
                   })}
@@ -97,6 +97,7 @@ export default function Home() {
                             jobTitle={job.jobTitle}
                             company={job.company}
                             description={job.description}
+                            descriptionListForm={job.descriptionListForm}
                             techStack={job.techStack}
                           />
                         </Grid>
