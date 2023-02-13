@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+}
+
+.closeIcon {
+  display: flex;
+  justify-content: end;
+  margin: -1.5rem -1.5rem 1rem 1.5rem;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: var(--padding-quarter);
+}
+
+.dateAndIcon {
+  display: flex;
+}
+
+.date {
+  display: flex;
+  margin-left: var(--padding-quarter);
+}
+
+.githubIcon {
+    color: var(--light-main);
+}
+
+.projectTitle {
+  margin-bottom: var(--padding-quarter);
+  font-size: var(--section-header);
+  line-height: var(--section-header-line-height);
+  font-weight: bold;
+}
+
+.projectDescription {
+  text-align: left;
+  margin-bottom: var(--padding);
+}
+
+.techStack {
+  color: var(--shade-main);
+}

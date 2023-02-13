@@ -9,12 +9,8 @@
 
 .container:hover{
     transform: scale(1.04);
-    border-color: var(--light-blue);
+    border-color: var(--light-yellow);
     cursor: pointer;
-}
-
-.container:hover .jobTitle {
-    color: var(--light-blue)
 }
 
 .dateAndLocation {
@@ -37,6 +33,10 @@
   font-size: var(--section-header);
   line-height: var(--section-header-line-height);
   font-weight: bold;
+}
+
+.container:hover .jobTitle {
+  color: var(--light-yellow)
 }
 
 .company {

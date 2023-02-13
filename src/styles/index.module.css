@@ -11,7 +11,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 10rem 20rem 0 20rem;
+    margin: 10rem 20rem 0;
 }
 
 .introContainer {

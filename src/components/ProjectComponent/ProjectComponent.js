@@ -1,13 +1,19 @@
+import { useState } from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styles from "@/styles/ProjectComponent.module.css";
+import ProjectComponentModal from "./ProjectComponentModal";
 
 function ProjectComponent(props) {
   const { date, name, description, githubLink, techStack } = props;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpen = () => {!isModalOpen && setIsModalOpen(true)};
+  const handleClose = () => setIsModalOpen(false);
 
   return (
-    <div class={styles.container}>
+    <div class={styles.container} onClick={handleOpen}>
+      <ProjectComponentModal isOpen={isModalOpen} handleClose={handleClose} projectDetails={props}/>
       <div className={styles.topRow}>
         <div class={styles.dateContainer}>
           <CalendarMonthIcon />

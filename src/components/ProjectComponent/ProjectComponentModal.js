@@ -1,8 +1,10 @@
-import styles from "@/styles/JobComponentModal.module.css";
+import styles from "@/styles/ProjectComponentModal.module.css";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CloseIcon from "@mui/icons-material/Close";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import Link from "@mui/material/Link";
 
 const style = {
   position: "absolute",
@@ -16,10 +18,10 @@ const style = {
   p: 4,
 };
 
-function JobComponentModal(props) {
-  const { isOpen, handleClose, jobDetails } = props;
-  const { date, location, jobTitle, company, descriptionListForm, techStack } =
-    jobDetails;
+function ProjectComponentModal(props) {
+  const { isOpen, handleClose, projectDetails } = props;
+  const { date, name, githubLink, descriptionListForm, techStack } =
+    projectDetails;
 
   return (
     <div class={styles.container}>
@@ -34,14 +36,21 @@ function JobComponentModal(props) {
             <div class={styles.closeIcon} onClick={handleClose}>
               <CloseIcon />
             </div>
-            <div class={styles.dateAndLocation}>
-              <CalendarMonthIcon />
-              <div class={styles.date}>{date}</div>
-              <div class={styles.location}>{location}</div>
+            <div class={styles.dateContainer}>
+              <div class={styles.dateAndIcon}>
+                <CalendarMonthIcon />
+                <div class={styles.date}>{date}</div>
+              </div>
+              <div className={styles.githubLink}>
+                {githubLink && (
+                  <Link class={styles.githubIcon} href={githubLink} target="_blank">
+                    <GitHubIcon fontSize="medium" />
+                  </Link>
+                )}
+              </div>
             </div>
-            <div class={styles.jobTitle}>{jobTitle}</div>
-            <div class={styles.company}>{company}</div>
-            <div class={styles.jobDescription}>
+            <div class={styles.projectTitle}>{name}</div>
+            <div class={styles.projectDescription}>
               <ul>
                 {descriptionListForm.map((item) => {
                   return <li key={item.key}>{item.item}</li>;
@@ -59,4 +68,4 @@ function JobComponentModal(props) {
   );
 }
 
-export default JobComponentModal;
+export default ProjectComponentModal;

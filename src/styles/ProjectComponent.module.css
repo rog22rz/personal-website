@@ -2,18 +2,14 @@
   border: 3px solid var(--light-main);
   padding: var(--padding-half);
   background-color: var(--dark-secondary);
-  transition: all .1s ease-in-out; 
+  transition: all 0.1s ease-in-out;
   min-height: 12.5rem;
 }
 
-.container:hover{
-    transform: scale(1.04);
-    border-color: var(--light-blue);
-    cursor: pointer;
-}
-
-.container:hover .name {
-    color: var(--light-blue)
+.container:hover {
+  transform: scale(1.04);
+  border-color: var(--light-yellow);
+  cursor: pointer;
 }
 
 .topRow {
@@ -21,12 +17,12 @@
   justify-content: space-between;
 }
 
-.topRow a{
+.topRow a {
   color: var(--light-main);
 }
 
-.topRow a:hover{
-  color: var(--light-blue);
+.topRow a:hover {
+  color: var(--light-yellow);
 }
 
 .dateContainer {
@@ -45,13 +41,17 @@
   margin-bottom: var(--padding-half);
   font-size: var(--section-header);
   line-height: var(--section-header-line-height);
-  font-weight: bold;    
+  font-weight: bold;
+}
+
+.container:hover .name {
+  color: var(--light-yellow);
 }
 
 .description {
-    margin-bottom: var(--padding);
+  margin-bottom: var(--padding);
 }
 
 .techStack {
-    color: var(--shade-main);   
+  color: var(--shade-main);
 }

@@ -133,10 +133,46 @@ export const jobs = [
 
 export const projects = [
   {
+    date: "Jan 2023",
+    name: "This website!",
+    description:
+      "A dual-purpose web app aimed at helping patients manage access to their health information, and providing EMTs with crucial medical data.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "My personal website presenting my experience, projects, and more details about me!",
+      },
+      {
+        key: 2,
+        item: "Built using NextJS and deployed with Netlify",
+      },
+    ],
+    githubLink: "https://github.com/rog22rz/personal-website",
+    techStack: ["NextJS", "Netlify"],
+  },
+  {
     date: "Jun 2022",
     name: "NuHealth: Publicis Sapient Hackathon Finalist",
     description:
       "A dual-purpose web app aimed at helping patients manage access to their health information, and providing EMTs with crucial medical data.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "A dual-purpose web app aimed at helping patients manage access to their health information, and providing EMTs with crucial medical data.",
+      },
+      {
+        key: 2,
+        item: "Hoping to help provide the 15 million people of Ontario with easier access to their medical records.",
+      },
+      {
+        key: 3,
+        item: "Created and deployed within 36 hours alongside 3 other teammates.",
+      },
+      {
+        key: 4,
+        item: "Built a sleek and responsive UI with NextJS, used Google Firebase to store user data, and deployed with Netlify.",
+      },
+    ],
     githubLink: "https://github.com/rog22rz/nuhealth_public",
     techStack: ["NextJS", "Google Firebase", "Netlify"],
   },
@@ -145,6 +181,20 @@ export const projects = [
     name: "Parking Reservation Application",
     description:
       "Application allowing users to temporarily rent parking spaces to other users.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "Application allowing users to temporarily rent parking spaces to other users.",
+      },
+      {
+        key: 2,
+        item: "Led the back-end development of a team of 16 people.",
+      },
+      {
+        key: 3,
+        item: "The back end was developed using the Spring boot framework and the front end utilizes React.",
+      },
+    ],
     githubLink: "https://github.com/rog22rz/ParkingBackEnd",
     techStack: ["React", "Spring Framework", "Hibernate"],
   },
@@ -153,6 +203,20 @@ export const projects = [
     name: "McHacks Hackathon",
     description:
       "Extracted and analyzed mock medical data from an FHRI API in the scope of detecting patterns indicative of medical conditions such as diabetes and high dyslipidemia",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "Extracted and analyzed mock medical data from an FHRI API in the scope of detecting patterns indicative of medical conditions such as diabetes and high dyslipidemia.",
+      },
+      {
+        key: 2,
+        item: "Led the back-end development of a team of 16 people.",
+      },
+      {
+        key: 3,
+        item: "Used a spring backend to parse and analyze the data. Use a VueJS frontend to display the computed patterns.",
+      },
+    ],
     techStack: ["VueJS", "Spring Framework"],
   },
 ];

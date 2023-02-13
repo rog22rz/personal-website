@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import JobComponentModal from "./JobComponentModal";
 import styles from "@/styles/JobComponent.module.css";

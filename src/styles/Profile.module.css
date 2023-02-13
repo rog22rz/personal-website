@@ -17,12 +17,8 @@
     #ffd000 67%,
     #fff800 100%
   );
-  background-clip: border-box;
   background-size: 200% auto;
   color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
 }
@@ -36,14 +32,14 @@
   margin-bottom: var(--padding);
 }
 
-.title:hover {
-  transform: scale(1.1);
-  transition-duration: 0.2s;
-}
-
 .title {
   animation: color-animation 4s linear infinite;
   justify-content: center;
+}
+
+.title:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
 }
 
 /* Name animation */
