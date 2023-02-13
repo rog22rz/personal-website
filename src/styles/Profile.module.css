@@ -19,10 +19,11 @@
   );
   background-size: 200% auto;
   color: #fff;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
 }
- 
+
 .name:hover {
   transform: scale(1.1);
   transition-duration: 0.2s;
