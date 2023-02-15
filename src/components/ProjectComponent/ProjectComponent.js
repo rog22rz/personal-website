@@ -12,12 +12,12 @@ function ProjectComponent(props) {
   const handleClose = () => setIsModalOpen(false);
 
   return (
-    <div class={styles.container} onClick={handleOpen}>
+    <div className={styles.container} onClick={handleOpen}>
       <ProjectComponentModal isOpen={isModalOpen} handleClose={handleClose} projectDetails={props}/>
       <div className={styles.topRow}>
-        <div class={styles.dateContainer}>
+        <div className={styles.dateContainer}>
           <CalendarMonthIcon />
-          <div class={styles.date}>{date}</div>
+          <div className={styles.date}>{date}</div>
         </div>
         <div className={styles.githubLink}>
           {githubLink && <Link href={githubLink} target="_blank" aria-label="To learn more, visit project github page">
@@ -25,9 +25,9 @@ function ProjectComponent(props) {
           </Link>}
         </div>
       </div>
-      <div class={styles.name}>{name}</div>
-      <div class={styles.description}>{description}</div>
-      <div class={styles.techStack}>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.description}>{description}</div>
+      <div className={styles.techStack}>
         {techStack && techStack.map((tech) => <span key={tech}>{tech} | </span>)}
       </div>
     </div>

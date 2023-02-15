@@ -24,7 +24,7 @@ function ProjectComponentModal(props) {
     projectDetails;
 
   return (
-    <div class={styles.container}>
+    <div className={styles.container}>
       <Modal
         open={isOpen}
         onClose={handleClose}
@@ -32,32 +32,32 @@ function ProjectComponentModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div class={styles.container}>
-            <div class={styles.closeIcon} onClick={handleClose}>
+          <div className={styles.container}>
+            <div className={styles.closeIcon} onClick={handleClose}>
               <CloseIcon />
             </div>
-            <div class={styles.dateContainer}>
-              <div class={styles.dateAndIcon}>
+            <div className={styles.dateContainer}>
+              <div className={styles.dateAndIcon}>
                 <CalendarMonthIcon />
-                <div class={styles.date}>{date}</div>
+                <div className={styles.date}>{date}</div>
               </div>
               <div className={styles.githubLink}>
                 {githubLink && (
-                  <Link class={styles.githubIcon} href={githubLink} target="_blank">
+                  <Link className={styles.githubIcon} href={githubLink} target="_blank">
                     <GitHubIcon fontSize="medium" />
                   </Link>
                 )}
               </div>
             </div>
-            <div class={styles.projectTitle}>{name}</div>
-            <div class={styles.projectDescription}>
+            <div className={styles.projectTitle}>{name}</div>
+            <div className={styles.projectDescription}>
               <ul>
                 {descriptionListForm.map((item) => {
                   return <li key={item.key}>{item.item}</li>;
                 })}
               </ul>
             </div>
-            <div class={styles.techStack}>
+            <div className={styles.techStack}>
               {techStack &&
                 techStack.map((tech) => <span key={tech}>{tech} | </span>)}
             </div>

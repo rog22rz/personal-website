@@ -22,7 +22,7 @@ function JobComponentModal(props) {
     jobDetails;
 
   return (
-    <div class={styles.container}>
+    <div className={styles.container}>
       <Modal
         open={isOpen}
         onClose={handleClose}
@@ -30,25 +30,25 @@ function JobComponentModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div class={styles.container}>
-            <div class={styles.closeIcon} onClick={handleClose}>
+          <div className={styles.container}>
+            <div className={styles.closeIcon} onClick={handleClose}>
               <CloseIcon />
             </div>
-            <div class={styles.dateAndLocation}>
+            <div className={styles.dateAndLocation}>
               <CalendarMonthIcon />
-              <div class={styles.date}>{date}</div>
-              <div class={styles.location}>{location}</div>
+              <div className={styles.date}>{date}</div>
+              <div className={styles.location}>{location}</div>
             </div>
-            <div class={styles.jobTitle}>{jobTitle}</div>
-            <div class={styles.company}>{company}</div>
-            <div class={styles.jobDescription}>
+            <div className={styles.jobTitle}>{jobTitle}</div>
+            <div className={styles.company}>{company}</div>
+            <div className={styles.jobDescription}>
               <ul>
                 {descriptionListForm.map((item) => {
                   return <li key={item.key}>{item.item}</li>;
                 })}
               </ul>
             </div>
-            <div class={styles.techStack}>
+            <div className={styles.techStack}>
               {techStack &&
                 techStack.map((tech) => <span key={tech}>{tech} | </span>)}
             </div>

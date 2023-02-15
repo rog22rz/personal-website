@@ -10,17 +10,17 @@ function JobComponent(props) {
   const handleClose = () => setIsModalOpen(false);
 
   return (
-    <div class={styles.container} onClick={handleOpen}>
+    <div className={styles.container} onClick={handleOpen}>
       <JobComponentModal isOpen={isModalOpen} handleClose={handleClose} jobDetails={props}/>
-      <div class={styles.dateAndLocation}>
+      <div className={styles.dateAndLocation}>
         <CalendarMonthIcon />
-        <div class={styles.date}>{date}</div>
-        <div class={styles.location}>{location}</div>
+        <div className={styles.date}>{date}</div>
+        <div className={styles.location}>{location}</div>
       </div>
-      <div class={styles.jobTitle}>{jobTitle}</div>
-      <div class={styles.company}>{company}</div>
-      <div class={styles.jobDescription}>{description}</div>
-      <div class={styles.techStack}>
+      <div className={styles.jobTitle}>{jobTitle}</div>
+      <div className={styles.company}>{company}</div>
+      <div className={styles.jobDescription}>{description}</div>
+      <div className={styles.techStack}>
         {techStack && techStack.map((tech) => <span key={tech}>{tech} | </span>)}
       </div>
     </div>

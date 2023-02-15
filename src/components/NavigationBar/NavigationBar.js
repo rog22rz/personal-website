@@ -5,8 +5,8 @@ import classnames from "classnames";
 
 function NavigationBar({ isVisible }) {
   return (
-    <nav class={classnames("navbar", { "navbar--hidden": !isVisible })}>
-      <ul class={styles.list}>
+    <nav className={classnames("navbar", { "navbar--hidden": !isVisible })}>
+      <ul className={styles.list}>
         <li>
           <Link activeClass="active" offset={-2000} smooth spy to="about">
             About me
@@ -24,7 +24,7 @@ function NavigationBar({ isVisible }) {
         </li>
         <li>
           <a
-            class={styles.resumeBorders}
+            className={styles.resumeBorders}
             href={"/Resume_RogerZhang.pdf"}
             target="_blank"
             rel="noreferrer"
