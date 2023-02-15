@@ -91,10 +91,10 @@ export default function Home() {
               <div class={styles.career}>
                 <section id={"jobs"}>
                   <h1>Career</h1>
-                  <Grid container spacing={4}>
+                  <Grid container spacing={4} columns={{ lg: 12, xl: 12 }}>
                     {jobs.map((job) => {
                       return (
-                        <Grid key={job.jobTitle} item xs={6}>
+                        <Grid key={job.jobTitle} item lg={12} xl={6}>
                           <JobComponent
                             date={job.date}
                             location={job.location}
@@ -113,10 +113,10 @@ export default function Home() {
               <div class={styles.projects}>
                 <section id={"projects"}>
                   <h1>Projects</h1>
-                  <Grid container spacing={4}>
+                  <Grid container spacing={4} columns={{ lg: 12, xl: 12 }}>
                     {projects.map((project) => {
                       return (
-                        <Grid key={project.name} item xs={6}>
+                        <Grid key={project.name} item lg={12} xl={6}>
                           <ProjectComponent
                             date={project.date}
                             name={project.name}
@@ -135,6 +135,26 @@ export default function Home() {
           </div>
         </main>
         <footer class={styles.footer}>
+          <div class={styles.iconsBottom}>
+            <Link href="https://github.com/rog22rz" target="_blank">
+              <IconButton aria-label="github-link" size="large">
+                <GitHubIcon fontSize="inherit" />
+              </IconButton>
+            </Link>
+            <Link href="mailto:roger.zhang@mail.mcgill.ca" target="_blank">
+              <IconButton aria-label="email-link" size="large">
+                <EmailIcon fontSize="inherit" />
+              </IconButton>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/zhang-roger/"
+              target="_blank"
+            >
+              <IconButton aria-label="linkdin-link" size="large">
+                <LinkedInIcon fontSize="inherit" />
+              </IconButton>
+            </Link>
+          </div>
           <a
             href="https://www.linkedin.com/in/zhang-roger/"
             target="_blank"

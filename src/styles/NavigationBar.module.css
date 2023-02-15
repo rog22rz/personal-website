@@ -18,3 +18,9 @@
 .resumeBorders:hover {
   color: var(--light-yellow);
 }
+
+@media screen and (max-width: 900px) {
+  .list {
+    font-size: 0.9rem;
+  }
+}

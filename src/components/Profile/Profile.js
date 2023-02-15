@@ -5,9 +5,9 @@ function Profile() {
   return (
     <div class={styles.container}>
       <Avatar
-        alt="Roger Zhang"
+        alt="Roger Zhang Smiling"
         src={"/ProfilePic.jpg"}
-        sx={{ width: 400, height: 400 }}
+        sx={{ width: 300, height: 300 }}
       />
       <div class={styles.name}>
         <h1>Roger Zhang</h1>

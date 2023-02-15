@@ -1,49 +1,82 @@
+
 .icons {
-    top: 50vh;
-    left: 5vh;
-    height: 18vh;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+  top: 50vh;
+  left: 5vh;
+  height: 18vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 10rem 20rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 20rem 0;
 }
 
 .introContainer {
-    display: flex;
-    height: 100vh;
-    margin-top: 10vh;
+  display: flex;
+  min-height: 100vh;
+  margin-top: 10vh;
 }
 
 .profile {
-    margin-bottom: var(--padding-quadruple);
-    margin-right: 5rem;
+  margin-bottom: var(--padding-quadruple);
+  margin-right: 5rem;
 }
 
 .bio {
-    margin-bottom: var(--padding-double);
+  margin-bottom: var(--padding-double);
 }
 
 .career {
-    margin-bottom: var(--padding-double);
+  margin-bottom: var(--padding-double);
 }
 
 .projects {
-    margin-bottom: var(--padding-double);
+  margin-bottom: var(--padding-double);
 }
 
 .footer {
-    margin: 2.5rem 0;
-    display: flex;
-    justify-content: center;
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer a{
-    color: var(--light-main);
-    text-decoration: none;
+.footer a {
+  color: var(--light-main);
+  text-decoration: none;
 }
+
+.iconsBottom {
+  display: none;
+}
+
+@media screen and (max-width: 1536px) {
+    .introContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icons {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 10rem 3rem 0;
+    }
+
+    .profile {
+      margin-right: 0;
+    }
+
+    .iconsBottom {
+      display: flex;
+      margin-bottom: var(--padding);
+    }
+  }

@@ -20,7 +20,7 @@ function ProjectComponent(props) {
           <div class={styles.date}>{date}</div>
         </div>
         <div className={styles.githubLink}>
-          {githubLink && <Link href={githubLink} target="_blank">
+          {githubLink && <Link href={githubLink} target="_blank" aria-label="To learn more, visit project github page">
               <GitHubIcon fontSize="medium" />
           </Link>}
         </div>
