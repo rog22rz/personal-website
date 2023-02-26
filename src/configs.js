@@ -96,7 +96,7 @@ export const jobs = [
     date: "Jun 2018 - Aug 2018",
     location: "Beijing",
     jobTitle: "Software Research Intern",
-    company: "Neihang University",
+    company: "Beihang University",
     description:
       "Redesigned android app that helps medical professionals share X-rays and ask colleagues for insights. Also worked on Tensorflow implementation for learning image-to-image input-output pairs.",
     descriptionListForm: [

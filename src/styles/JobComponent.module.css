@@ -30,8 +30,8 @@
 
 .jobTitle {
   margin-bottom: var(--padding-quarter);
-  font-size: var(--section-header);
-  line-height: var(--section-header-line-height);
+  font-size: var(--h2);
+  line-height: var(--h2-line-height);
   font-weight: bold;
 }
 
