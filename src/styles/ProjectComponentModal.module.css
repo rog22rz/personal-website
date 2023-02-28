@@ -1,5 +1,6 @@
 .container {
   text-align: center;
+  width: 30rem;
 }
 
 .closeIcon {
@@ -45,4 +46,15 @@
 
 .techStack {
   color: var(--shade-main);
+}
+
+@media screen and (max-width: 1536px) {
+  .container {
+    width: 16.5rem;
+  }
+
+  .projectTitle {
+    font-size: var(--h2);
+    line-height: var(--h2-line-height);
+  }
 }
