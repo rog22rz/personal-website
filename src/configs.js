@@ -2,7 +2,7 @@ export const intro = [
   {
     key: 1,
     section:
-      "Hi! Before starting to introduce myself, I just want to take a second to thank you, whoever you are, for visiting my personal website. It means a lot that you are taking some time out of your day to get to know me and look at things that I have built.",
+      "Hi! Before starting to introduce myself, I just want to take a second to thank you, whoever you are, for visiting my personal website. It means a lot that you are taking some time out of your day to get to know me and look at the things that I have built.",
   },
   {
     key: 2,
