@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## About
 
-This is the codebase for my personal website showcasing my work experience and project! I would also like to expand it to include some more details about me and projects that I am working on. It was built using NextJS and deployed on Netlify. Thank you for visiting!
+This is the codebase for my personal website showcasing my work experience and project! I would also like to expand it to include some more details about me and projects that I am working on. It was built using NextJS and deployed on Netlify. You can visit the website at the following address: http://rogerzhang.ca/. Thank you for visiting!
 
 ## Getting Started
 
