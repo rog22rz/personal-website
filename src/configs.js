@@ -152,7 +152,7 @@ export const projects = [
       },
       {
         key: 4,
-        item: "Webflow website can be found " + <a href="https://thrive-artwork-afefc46898-d9f19e4ce600d.webflow.io/where-art-thrives">"here"</a>,
+        item: "Webflow website can be found " + <a href="https://thrive-artwork-afefc46898-d9f19e4ce600d.webflow.io/where-art-thrives">here</a>,
       },
     ],
     githubLink: "https://github.com/rog22rz/thrive-webserver",
