@@ -133,6 +133,32 @@ export const jobs = [
 
 export const projects = [
   {
+    date: "Jun 2023",
+    name: "Thrive Webserver",
+    description:
+      "A webserver designed to POST a new item to a Webflow CMS when it receives a POST from a Webflow webhook.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "Helped a friend build a web server designed to post a new item to a Webflow CMS when it receives a POST from a Webflow webhook.",
+      },
+      {
+        key: 2,
+        item: "Replaces 3rd party software such as Zapier which charges 27$/month for the same service.",
+      },
+      {
+        key: 3,
+        item: "Built using Go, deployed using Docker and Google Cloud Run.",
+      },
+      {
+        key: 4,
+        item: "Webflow website can be found here: https://thrive-artwork-afefc46898-d9f19e4ce600d.webflow.io/where-art-thrives.",
+      },
+    ],
+    githubLink: "https://github.com/rog22rz/thrive-webserver",
+    techStack: ["Go", "Docker", "Google Cloud Run"],
+  },
+  {
     date: "Jan 2023",
     name: "This website!",
     description:
