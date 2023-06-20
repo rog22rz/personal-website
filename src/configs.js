@@ -150,10 +150,6 @@ export const projects = [
         key: 3,
         item: "Built using Go, deployed using Docker and Google Cloud Run.",
       },
-      {
-        key: 4,
-        item: "Webflow website can be found " + <a href="https://thrive-artwork-afefc46898-d9f19e4ce600d.webflow.io/where-art-thrives">here</a>,
-      },
     ],
     githubLink: "https://github.com/rog22rz/thrive-webserver",
     techStack: ["Go", "Docker", "Google Cloud Run"],
