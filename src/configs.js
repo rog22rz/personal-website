@@ -155,6 +155,24 @@ export const projects = [
     techStack: ["Go", "Docker", "Google Cloud Run"],
   },
   {
+    date: "May 2023",
+    name: "Star Wars Tracker",
+    description:
+      "A web app to track the star wars movies/shows you have watched, and how much time it would take to watch the ones you haven't seen yet.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "Web app that allow you to track all the Star Wars shows and their watch time so that you can easily see how much you have left.",
+      },
+      {
+        key: 2,
+        item: "Built using Vite.js, authentication and data storage using Firebase",
+      },
+    ],
+    githubLink: "https://github.com/rog22rz/starwars-tracker",
+    techStack: ["Vite.js", "Google Firebase"],
+  },
+  {
     date: "Jan 2023",
     name: "This website!",
     description:
