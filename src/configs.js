@@ -176,7 +176,7 @@ export const projects = [
     date: "Jan 2023",
     name: "This website!",
     description:
-      "A dual-purpose web app aimed at helping patients manage access to their health information, and providing EMTs with crucial medical data.",
+      "My personal website presenting my experience, projects, and more details about me!",
     descriptionListForm: [
       {
         key: 1,
