@@ -12,7 +12,7 @@ function Profile() {
       <div className={styles.name}>
         <h1>Roger Zhang</h1>
         <h2>
-          <span>SDE @ Publicis Sapient</span>
+          <span>SDE @ Wayfair</span>
         </h2>
       </div>
     </div>

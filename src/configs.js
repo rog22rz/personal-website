@@ -27,10 +27,33 @@ export const intro = [
 ];
 
 export const jobs = [
-  {
-    date: "Jun 2021 - Present",
+      {
+    date: "Oct 2023 - Present",
     location: "Toronto",
-    jobTitle: "L1 Software Development Engineer",
+    jobTitle: "Software Engineer",
+    company: "Wayfair - Supplier Advertising",
+    description:
+      "Built and launched new full-stack ad offerings (React front-end, Spring Boot back-end), boosting click-through rate by +1.5% and driving $30 M in additional supplier campaign commitments.",
+    descriptionListForm: [
+      {
+        key: 1,
+        item: "Built and launched new full-stack ad offerings (React front-end, Spring Boot back-end), boosting click-through rate by +1.5% and driving $30 M in additional supplier campaign commitments.",
+      },
+      {
+        key: 2,
+        item: "Doubled display-banner revenue from $30 M to $60 M in 18 months by refining placement logic.",
+      },
+      {
+        key: 3,
+        item: "System design and development of multiple brand new ad decisioning micro-services, including thorough metrics, dashboards, logs and run books for each.",
+      },
+    ],
+    techStack: ["Next.js", "Spring Boot", "Java", "Docker", "Kafka", "Aerospike", "Buildkite", "Datadog"],
+  },
+  {
+    date: "Jun 2021 - Oct 2023",
+    location: "Toronto",
+    jobTitle: "Junior Software Engineer",
     company: "Publicis Sapient",
     description:
       "Worked on Goldman Sachs's new investment initiative that could reach around 10 million customers and bring billions in revenue.",
@@ -52,7 +75,7 @@ export const jobs = [
         item: "Worked on the Goldman Sachs investment advisory tool used by more than 14 million customers.",
       },
     ],
-    techStack: ["React", "Spring Framework", "Java"],
+    techStack: ["React", "Spring Boot", "Java"],
   },
   {
     date: "Jun 2020 - Aug 2020",

@@ -58,7 +58,7 @@ export default function Home() {
                 <GitHubIcon fontSize="inherit" />
               </IconButton>
             </Link>
-            <Link href="mailto:roger.zhang@mail.mcgill.ca" target="_blank">
+            <Link href="mailto:rog22rz+personalwebsite@gmail.com" target="_blank">
               <IconButton aria-label="email-link" size="large">
                 <EmailIcon fontSize="inherit" />
               </IconButton>
@@ -142,7 +142,7 @@ export default function Home() {
                 <GitHubIcon fontSize="inherit" />
               </IconButton>
             </Link>
-            <Link href="mailto:roger.zhang@mail.mcgill.ca" target="_blank">
+            <Link href="mailto:rog22rz+personalwebsite@gmail.com" target="_blank">
               <IconButton aria-label="email-link" size="large">
                 <EmailIcon fontSize="inherit" />
               </IconButton>
